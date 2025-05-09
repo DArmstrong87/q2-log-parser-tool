@@ -24,16 +24,16 @@ python3 export_combined_lines.py > "$subdirectory$datevar.log"
 echo -e "${green}Creating logs by user...\n${reset}"
 python3 get_logs_by_user.py > "$subdirectory"logs_by_user.log
 
-# # Export network errors
-# echo -e "${green}Creating list of network errors...\n${reset}"
-# python3 get_network_errors.py > "$subdirectory"getstream_network_errors.log
+# Export network errors
+echo -e "${green}Creating list of network errors...\n${reset}"
+python3 get_network_errors.py > "$subdirectory"getstream_network_errors.log
 
-# # Export 400 errors
-# echo -e "${green}Creating list of 400 errors...\n${reset}"
-# python3 get_400_and_500_errors.py > "$subdirectory"400_500_errors.log
+# Export 400 errors
+echo -e "${green}Creating list of 400 errors...\n${reset}"
+python3 get_400_and_500_errors.py > "$subdirectory"400_500_errors.log
 
-# # Export Response Times
-# echo -e "${green}Calculating response times...\n${reset}"
-# python3 response_times.py > "$subdirectory"response_times.log
+# Export Response Times
+echo -e "${green}Calculating response times...\n${reset}"
+python3 response_times.py > "$subdirectory"response_times.log
 
-# echo -e "${green}DONE!\n${reset}"
+echo -e "${green}DONE!\n${reset}"
