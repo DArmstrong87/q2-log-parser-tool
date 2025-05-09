@@ -3,6 +3,9 @@
 
 This tool assists in parsing through thousands of lines of logs in order to quickly find errors and determine response times of the Neural Payments P2P extension per FI.
 
+## PII
+All Personally Identifiable Information (PII) have been redacted from the files in the `files/masked` directory for demo purposes.
+
 ## Configuration
 1. Modify config.py and update the `directory` variable to the directory of where you will be downloading and parsing the Q2 logs.
 2. You will have multiple files in this directory that the tool will read.
